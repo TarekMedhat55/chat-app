@@ -3,14 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chat app</title>
+    <link rel="stylesheet" href="./css/styles.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>join</title>
   </head>
   <body>
-    <p id="counter">0</p>
-    <button id="increment">+1</button>
-    <button id="decrement">-1</button>
-    <button id="reset">reset</button>
+    <div class="centered-form">
+      <div class="centered-form__box">
+        <h1>join</h1>
+        <form action="./chat.html">
+          <label for="name">name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            name="name"
+            required
+          />
+          <label for="room">room</label>
+          <input
+            type="text"
+            id="room"
+            placeholder="Enter room name"
+            name="room"
+            required
+          />
+          <button id="join" type="submit">Join</button>
+        </form>
+      </div>
+    </div>
   </body>
-  <script src="/socket.io/socket.io.js"></script>
-  <script src="./script.js"></script>
 </html>
